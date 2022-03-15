@@ -35,3 +35,7 @@ task copyWebApplication(type: Copy) {
 processResources.dependsOn(copyWebApplication)
 build.dependsOn(copyWebApplication)
 copyWebApplication.dependsOn(':client:build')
+
+jar {
+    enabled = false
+}
